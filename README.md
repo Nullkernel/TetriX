@@ -25,6 +25,11 @@ A modern, feature-rich Tetris implementation built with Python and Pygame. This 
 
 ## 🚀 Installation & Setup:
 
+## Install Dependencies:
+```bash
+python install.py
+```
+
 ### Requirements:
 ```bash
 # Install required dependencies
