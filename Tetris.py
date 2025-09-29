@@ -222,7 +222,7 @@ class Tetrimino:
 class TetrisGame:
     def __init__(self):
         self.screen = pygame.display.set_mode((SCREEN_WIDTH + SIDE_PANEL_WIDTH, SCREEN_HEIGHT))
-        pygame.display.set_caption("Tetris")
+        pygame.display.set_caption("TetriX")
         self.clock = pygame.time.Clock()
 
         # Fonts
@@ -715,7 +715,7 @@ class TetrisGame:
         """Draw the main menu"""
         self.screen.fill(BLACK)
 
-        title = self.font_large.render("TETRIS", True, WHITE)
+        title = self.font_large.render("TETRIX", True, WHITE)
         title_rect = title.get_rect(center=(self.screen.get_width()//2, 200))
         self.screen.blit(title, title_rect)
 
@@ -879,4 +879,5 @@ class TetrisGame:
 
 if __name__ == "__main__":
     game = TetrisGame()
+
     game.run()
