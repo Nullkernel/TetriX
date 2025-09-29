@@ -1,4 +1,4 @@
-# Tetris Game 🎮:
+# TetriX (Tetris Game) 🎮:
 
 A modern, feature-rich Tetris implementation built with Python and Pygame. This version includes official Tetris standards, advanced visual effects, sound system, and comprehensive gameplay mechanics.
 
@@ -40,7 +40,7 @@ pip install pygame numpy
 ```bash
 # Clone or download the repository
 # Run the game
-python Tetris.py
+python TetriX.py
 ```
 
 ### System Requirements:
