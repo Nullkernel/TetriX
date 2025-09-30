@@ -15,7 +15,7 @@ try:
     SOUND_AVAILABLE = True
 except:
     SOUND_AVAILABLE = False
-    print("Sound initialization failed - continuing without sound.")
+    print("# Sound initialization failed - continuing without sound.")
 
 # Screen dimensions
 SCREEN_WIDTH = 400
@@ -172,10 +172,10 @@ class SoundManager:
             self.sounds['drop'] = sound
 
         except ImportError:
-            print("NumPy not installed - sounds disabled. Run: pip install numpy")
+            print("# NumPy not installed - sounds disabled. Run: pip install numpy")
             self.sfx_enabled = False
         except Exception as e:
-            print(f"Could not create sounds: {e}")
+            print(f"# Could not create sounds: {e}")
             self.sfx_enabled = False
 
     def play_sound(self, sound_name):
@@ -721,14 +721,14 @@ class TetrisGame:
 
         instructions = [
             "# CONTROLS:",
-            "Left/Right : Move",
-            "Down : Soft Drop", 
-            "Space : Hard Drop",
-            "Up : Rotate",
-            "C : Hold",
-            "P : Pause",
+            "LEFT/RIGHT : MOVE",
+            "DOWN : SOFT DROP", 
+            "SPACE : HARD DROP",
+            "UP : ROTATE",
+            "C : HOLD",
+            "P : PAUSE",
             "",
-            "# Press SPACE to Start: "
+            "Press SPACE To Start."
         ]
 
         y = 300
@@ -745,11 +745,11 @@ class TetrisGame:
         overlay.fill(BLACK)
         self.screen.blit(overlay, (0, 0))
 
-        pause_text = self.font_large.render("PAUSED", True, WHITE)
+        pause_text = self.font_large.render("PAUSED.", True, WHITE)
         pause_rect = pause_text.get_rect(center=(self.screen.get_width()//2, self.screen.get_height()//2))
         self.screen.blit(pause_text, pause_rect)
 
-        resume_text = self.font_medium.render("Press 'P' to Resume", True, WHITE)
+        resume_text = self.font_medium.render("Press 'P' To Resume.", True, WHITE)
         resume_rect = resume_text.get_rect(center=(self.screen.get_width()//2, self.screen.get_height()//2 + 50))
         self.screen.blit(resume_text, resume_rect)
 
@@ -772,7 +772,7 @@ class TetrisGame:
         level_rect = final_level.get_rect(center=(self.screen.get_width()//2, self.screen.get_height()//2 - 20))
         self.screen.blit(final_level, level_rect)
 
-        restart_text = self.font_medium.render("Press 'R'' to Restart (or) 'Q' to Quit", True, WHITE)
+        restart_text = self.font_medium.render("Press 'R'' To Restart (or) 'Q' To Quit.", True, WHITE)
         restart_rect = restart_text.get_rect(center=(self.screen.get_width()//2, self.screen.get_height()//2 + 50))
         self.screen.blit(restart_text, restart_rect)
 
@@ -881,3 +881,4 @@ if __name__ == "__main__":
     game = TetrisGame()
 
     game.run()
+
