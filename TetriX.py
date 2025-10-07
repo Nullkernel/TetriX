@@ -772,7 +772,7 @@ class TetrisGame:
         level_rect = final_level.get_rect(center=(self.screen.get_width()//2, self.screen.get_height()//2 - 20))
         self.screen.blit(final_level, level_rect)
 
-        restart_text = self.font_medium.render("Press 'R'' To Restart (or) 'Q' To Quit.", True, WHITE)
+        restart_text = self.font_medium.render("Press 'R' To Restart (or) 'Q' To Quit.", True, WHITE)
         restart_rect = restart_text.get_rect(center=(self.screen.get_width()//2, self.screen.get_height()//2 + 50))
         self.screen.blit(restart_text, restart_rect)
 
@@ -881,4 +881,5 @@ if __name__ == "__main__":
     game = TetrisGame()
 
     game.run()
+
 
