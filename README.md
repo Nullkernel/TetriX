@@ -1,8 +1,8 @@
-# TetriX (Tetris Game) 🎮:
+# `TetriX` (Tetris Game):
 
-A modern, feature-rich Tetris implementation built with Python and Pygame. This version includes official Tetris standards, advanced visual effects, sound system, and comprehensive gameplay mechanics.
+A modern, feature-rich Tetris implementation built with Python and `Pygame`. This version includes official Tetris standards, advanced visual effects, sound system, and comprehensive gameplay mechanics.
 
-## 🎯 Features:
+## Features:
 
 ### Core Gameplay:
 - **Official Tetris Standards**: Proper piece colors, 7-bag randomization system, and standard scoring.
@@ -23,7 +23,7 @@ A modern, feature-rich Tetris implementation built with Python and Pygame. This 
 - **High Score System**: Persistent top 10 score tracking saved to JSON file.
 - **Next Piece Preview**: Shows upcoming '3' pieces instead of just '1'.
 
-## 🚀 Installation & Setup:
+## Installation & Setup:
 
 ### Requirements:
 ```bash
@@ -40,26 +40,26 @@ python TetriX.py
 
 ### System Requirements:
 - Python 3.6+
-- Pygame library
-- NumPy (for sound generation - optional)
+- `Pygame` library
+- `NumPy` (for sound generation - optional)
 
-## 🎮 Controls:
+## Controls:
 
-| Key | Action |
-|-----|--------|
-| **Movement** | |
-| ← → | Move piece left/right |
-| ↓ | Soft drop (faster fall) |
-| ↑ | Rotate piece clockwise |
-| **Special Actions** | |
-| `Space` | Hard drop (instant drop) |
-| `C` | Hold current piece |
-| **Game Controls** | |
-| `P` | Pause/unpause game |
-| `R` | Restart (on game over screen) |
-| `Q` | Quit (on game over screen) |
+| Key                 | Action                        |
+| ------------------- | ----------------------------- |
+| **Movement**        |                               |
+| ← →                 | Move piece left/right         |
+| ↓                   | Soft drop (faster fall)       |
+| ↑                   | Rotate piece clockwise        |
+| **Special Actions** |                               |
+| `Space`             | Hard drop (instant drop)      |
+| `C`                 | Hold current piece            |
+| **Game Controls**   |                               |
+| `P`                 | Pause/unpause game            |
+| `R`                 | Restart (on game over screen) |
+| `Q`                 | Quit (on game over screen)    |
 
-## 📊 Game Mechanics:
+## Game Mechanics:
 
 ### Scoring System:
 - **Single Line**: 100 × level
@@ -80,7 +80,7 @@ Uses the modern Tetris piece generation system ensuring fair distribution:
 - Pieces are shuffled randomly within each bag.
 - Prevents long droughts of specific pieces.
 
-## 🏗️ Code Architecture:
+## Code Architecture:
 
 ### Main Classes:
 - **`TetrisGame`**: Main game controller handling states, events, and rendering.
@@ -100,7 +100,7 @@ Uses the modern Tetris piece generation system ensuring fair distribution:
 - **Memory Management**: Proper cleanup of particles and effects.
 - **Responsive Input**: Immediate control response without lag.
 
-## 🎨 Visual Effects:
+## Visual Effects:
 
 ### Particle System:
 - **Line Clear Effects**: Explosion particles when lines are cleared.
@@ -119,7 +119,7 @@ Uses the modern Tetris piece generation system ensuring fair distribution:
 - **Ghost Piece**: Semi-transparent preview showing drop position.
 - **Color Coding**: Official Tetris color scheme for each piece type.
 
-## 📈 Statistics & Tracking:
+## Statistics & Tracking:
 
 ### Performance Metrics:
 - **PPS (Pieces Per Second)**: Measure of play speed.
@@ -132,7 +132,7 @@ Uses the modern Tetris piece generation system ensuring fair distribution:
 - **Automatic Saving**: Scores saved automatically on game over.
 - **Error Handling**: Graceful handling of file system issues.
 
-## 🔧 Configuration:
+## Configuration:
 
 ### Sound Settings:
 The game automatically detects sound capabilities:
@@ -145,18 +145,18 @@ The game automatically detects sound capabilities:
 - Particle count automatically managed for performance.
 - Visual effects can be reduced on slower systems.
 
-## 🐛 Troubleshooting:
+## Troubleshooting:
 
 ### Common Issues:
 1. **No Sound**: Install NumPy (`pip install numpy`) or ignore - game works without sound.
 2. **Slow Performance**: Reduce particle effects by modifying particle count in code.
-3. **Installation Issues**: Ensure Python 3.6+ and Pygame are properly installed.
+3. **Installation Issues**: Ensure Python 3.6+ and `Pygame` are properly installed.
 
 ### System Requirements:
-- **Minimum**: Python 3.6, Pygame.
-- **Recommended**: Python 3.8+, NumPy.
+- **Minimum**: Python 3.6, `Pygame`.
+- **Recommended**: Python 3.8+, `NumPy`.
 
-## 🎯 Gameplay Tips:
+## Gameplay Tips:
 
 ### Advanced Techniques:
 - **T-Spins**: Use the hold piece strategically for complex clears.
@@ -170,7 +170,7 @@ The game automatically detects sound capabilities:
 - Hold piece is crucial for avoiding difficult situations.
 - Focus on Tetris clears (4 lines) for maximum points.
 
-## 📝 Version History:
+## Version History:
 
 ### Features Added:
 - Official Tetris color scheme and piece generation.
@@ -188,14 +188,14 @@ The game automatically detects sound capabilities:
 - Optimized rendering pipeline for complex visual effects.
 - Memory-efficient particle system with automatic cleanup.
 
-## 🤝 Contributing:
+## Contributing:
 
 This is a complete, standalone Tetris implementation. The code is well-structured and documented for educational purposes and further enhancement.
 
-## 📄 License:
+## License:
 
 This project is open source and available for educational and personal use. Tetris is a trademark of Tetris Holding, LLC.
 
 ---
 
-**Enjoy the classic game with modern enhancements!** 🎮✨
+**Enjoy the classic game with modern enhancements!**
